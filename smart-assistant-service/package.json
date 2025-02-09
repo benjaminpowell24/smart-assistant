@@ -1,0 +1,42 @@
+{
+  "name": "smart-assistant-service",
+  "version": "1.0.0",
+  "description": "Smart Assistant Service",
+  "author": {
+    "name": "Christian Saldana",
+    "email": "csaldanabanuelos@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Benjamin Powell",
+      "email": "benjaminpowell24@gmail.com"
+    },
+    {
+      "name": "Kebede Martey",
+      "email": "kebede.martey@purplewave.com"
+    },
+    {
+      "name": "Victor Amevor",
+      "email": "victor.amevor@purplewave.com"
+    }
+  ],
+  "engines": {
+    "node": "20.x.x"
+  },
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "export NODE_TLS_REJECT_UNAUTHORIZED=0 && nodemon src/server.js -p 9999 -w 2"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "minimist": "^1.2.8",
+    "nodemon": "^3.1.7",
+    "openai": "^4.63.0",
+    "winston": "^3.15.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
