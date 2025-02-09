@@ -1,4 +1,3 @@
-import './tracer.js'
 import 'dotenv/config'
 import express from 'express'
 import conversation from './routes/conversation.js'
