@@ -26,14 +26,13 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "export NODE_TLS_REJECT_UNAUTHORIZED=0 && nodemon src/server.js -p 9999 -w 2"
+    "start": "export NODE_TLS_REJECT_UNAUTHORIZED=0 && nodemon src/server.js"
   },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
-    "minimist": "^1.2.8",
     "nodemon": "^3.1.7",
     "openai": "^4.63.0",
     "winston": "^3.15.0",
