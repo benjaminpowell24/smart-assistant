@@ -1,0 +1,10 @@
+FROM node:20
+
+COPY ./smart-assistant /var/www/smart-assistant
+
+ENV APP_HOME="/var/www/smart-assistant"
+
+WORKDIR ${APP_HOME}
+
+RUN npm install
+CMD [ "npm run dev" ]
