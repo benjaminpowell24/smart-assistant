@@ -60,7 +60,7 @@ const AnimatedText = ({ text }) => {
             >
                 {characters.map((char, index) => {
                     return (
-                        <>
+                        <div key={index}>
                             {((!isNaN(Number(char.word[0])) && char.word[1] === ".") || (char.word[0] === '-')) && <><div key={index} style={{ width: '100%', height: '.5em' }} /></>}
                             <motion.span
                                 key={index}
@@ -71,7 +71,7 @@ const AnimatedText = ({ text }) => {
                                 {char.word}&nbsp;
                             </motion.span>
                             {(char.word === ":" && !((characters[index + 5].word[0] === '-') || (characters[index + 4].word[0] === '-'))) && <div key={index} style={{ width: '100%', height: '.5em' }} />}
-                        </>
+                        </div>
                     )
                 })}
             </motion.div>
