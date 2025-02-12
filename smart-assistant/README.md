@@ -1,9 +1,7 @@
-##### This project was initially developed by 2024 PW Hackathon Team 7:
+## Setup
 
-- Benjamin Powell
-- Christian Saldana
-- Kebede Martey
-- Victor Amevor
-- Gabe Navarrette
-- Jay Hermann
-- Andrew Lowe
+##### Create a .env file and add the following variables:
+
+VITE_API_URL=https://localhost:<PORT>
+
+The port should be the same port used to run the service. Eg. 4000
