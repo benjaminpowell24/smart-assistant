@@ -11,11 +11,10 @@ export default defineConfig(({mode}) => {
   server: {
     port: 5173,
     proxy: {
-      '/v1': {
+      '/v1/smart-assistant': {
         target: env.VITE_API_URL,
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/v1/, ''), // Optional: Remove "/api" prefix if needed
       },
     },
   },
